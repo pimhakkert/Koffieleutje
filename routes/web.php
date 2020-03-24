@@ -13,10 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/koffie-box', 'CoffeeBoxController@index')->name('coffeebox_index');
 
-Auth::routes();
+Route::get('/', 'HomeController@index')->name('home_index');
 
-Route::get('/home', 'HomeController@index')->name('home');

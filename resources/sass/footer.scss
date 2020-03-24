@@ -1,0 +1,29 @@
+footer {
+    padding-top: 40px;
+    background-color: #301A17;
+    .wrap {
+        > div:nth-of-type(2) {
+            margin-top: 50px;
+        }
+        > div:last-of-type {
+            a {
+                color: #9C6F44;
+                text-decoration: underline;
+            }
+            justify-content: flex-end;
+        }
+    }
+    h3 {
+        font-weight: 300;
+    }
+    p {
+        color: #999999;
+        font-size: 18px;
+    }
+    .row {
+        flex-wrap: nowrap;
+    }
+    .footer-links > div {
+        display: flex;
+    }
+}

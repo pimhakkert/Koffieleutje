@@ -1,0 +1,35 @@
+footer {
+  padding-top: 40px;
+  background-color: #301A17;
+}
+
+footer .wrap > div:nth-of-type(2) {
+  margin-top: 50px;
+}
+
+footer .wrap > div:last-of-type {
+  justify-content: flex-end;
+}
+
+footer .wrap > div:last-of-type a {
+  color: #9C6F44;
+  text-decoration: underline;
+}
+
+footer h3 {
+  font-weight: 300;
+}
+
+footer p {
+  color: #999999;
+  font-size: 18px;
+}
+
+footer .row {
+  flex-wrap: nowrap;
+}
+
+footer .footer-links > div {
+  display: flex;
+}
+
