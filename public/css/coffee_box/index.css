@@ -20,10 +20,31 @@ body {
 
   .coffee-box-step1-buttons {
     flex-direction: column;
+    align-items: flex-end;
   }
 
   .coffee-box-step1-buttons-button {
-    margin: 10px 0;
+    margin: 15px 0;
+    transition: all 150ms ease;
+    position: relative;
+    width: calc(100% - 50px);
+  }
+
+  .coffee-box-step1-buttons-button.button-active.coffee-box-step1-buttons-button::after {
+    background-color: #66442D;
+  }
+
+  .coffee-box-step1-buttons-button::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #453736;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: 150ms background-color ease;
   }
 
   .coffee-box-step1-buttons-button:first-of-type {
@@ -32,6 +53,10 @@ body {
 
   .coffee-box-step1-buttons-button:last-of-type {
     margin-bottom: 0;
+  }
+
+  .coffee-box-step2-selection {
+    display: none !important;
   }
 }
 

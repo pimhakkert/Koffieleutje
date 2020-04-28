@@ -17,15 +17,41 @@ body {
             margin-top: 30px !important;
             &-buttons {
                 flex-direction: column;
+                align-items: flex-end;
                 &-button {
-                    margin: 10px 0;
+                    margin: 15px 0;
+                    transition: all 150ms ease;
+                    position: relative;
+                    &.button-active {
+                        &.coffee-box-step1-buttons-button::after {
+                            background-color: #66442D;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        background-color: #453736;
+                        left: -50px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-radius: 50%;
+                        transition: 150ms background-color ease;
+                    }
                     &:first-of-type {
                         margin-top: 0;
                     }
                     &:last-of-type {
                         margin-bottom: 0;
                     }
+                    width: calc(100% - 50px);
                 }
+            }
+        }
+        &-step2 {
+            &-selection {
+                display: none !important;
             }
         }
     }
