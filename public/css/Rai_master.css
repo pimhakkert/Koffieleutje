@@ -9110,6 +9110,7 @@ a.text-dark:focus {
 html,
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
