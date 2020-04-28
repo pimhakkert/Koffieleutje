@@ -9201,7 +9201,7 @@ a:hover {
   /*10% voor de margin van de .wrap*/
   left: -110%;
   background-color: #221918;
-  height: calc(100% - 90px);
+  height: calc(100% - 75px);
   transition: left 200ms ease;
 }
 
