@@ -9,13 +9,28 @@ body {
     background-size: 150% !important;
   }
 
-  .coffee-box-title {
+  .coffee-box {
+    padding-top: 135px !important;
+  }
+
+  .coffee-box-title > div {
     display: none;
+  }
+
+  .coffee-box-title h1 {
+    flex: unset;
+    max-width: 100%;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .coffee-box h2 {
+    font-size: 26px;
   }
 
   .coffee-box-step1 {
     padding-top: 30px !important;
-    margin-top: 30px !important;
+    margin-top: 60px !important;
   }
 
   .coffee-box-step1-buttons {

@@ -67,6 +67,11 @@
     #app {
         margin-top: 90px;
     }
+    .mobile-menu-navigation {
+        h2 {
+            font-size: 22px;
+        }
+    }
     .topmenu {
         z-index: 8;
         top: 0;
@@ -91,8 +96,8 @@
             align-self: center;
             display: flex;
             align-items: center;
-            width: 70px;
-            height: 70px;
+            width: 55px;
+            height: 55px;
             cursor: pointer;
             justify-content: flex-end;
             .hamburger {
@@ -132,7 +137,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         img {
-            height: 70px;
+            height: 55px;
             width: auto;
         }
         &-navigation, .btn-row {

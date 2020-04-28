@@ -9,12 +9,24 @@ body {
         background-size: 150% !important;
     }
     .coffee-box {
+        padding-top: 135px !important;
         &-title {
-            display: none;
+            > div {
+                display: none;
+            }
+            h1 {
+                flex: unset;
+                max-width: 100%;
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+        }
+        h2 {
+            font-size: 26px;
         }
         &-step1 {
             padding-top: 30px !important;
-            margin-top: 30px !important;
+            margin-top: 60px !important;
             &-buttons {
                 flex-direction: column;
                 align-items: flex-end;
