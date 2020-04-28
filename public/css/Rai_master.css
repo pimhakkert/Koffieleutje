@@ -9130,7 +9130,7 @@ img {
 
 @media only screen and (max-width: 900px) {
   #app {
-    width: 80vw !important;
+    width: 100% !important;
   }
 }
 
