@@ -9118,7 +9118,7 @@ img {
 }
 
 .wrap {
-  width: 80%;
+  width: 80vw;
   margin: 0 auto !important;
   font-family: 'Lato', sans-serif;
 }
