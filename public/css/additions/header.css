@@ -70,21 +70,87 @@
 }
 
 @media only screen and (max-width: 1100px) {
+  #app {
+    margin-top: 90px;
+  }
+
   .topmenu {
-    padding-top: 35px;
-    margin-bottom: 29px;
+    z-index: 8;
+    top: 0;
+    background-color: #301A17;
+    position: fixed;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .topmenu::before,
+  .topmenu::after {
+    content: '';
+    position: absolute;
+    background-color: #301A17;
+    height: 100%;
+    width: 10vw;
+    top: 0;
+  }
+
+  .topmenu::before {
+    left: -10vw;
+  }
+
+  .topmenu::after {
+    right: -10vw;
   }
 
   .topmenu-mobile {
     align-self: center;
     display: flex;
     align-items: center;
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    justify-content: flex-end;
+  }
+
+  .topmenu-mobile .hamburger {
+    padding: 0;
+  }
+
+  .topmenu-mobile .hamburger-box {
+    width: 50px;
+  }
+
+  .topmenu-mobile .hamburger .hamburger-inner,
+  .topmenu-mobile .hamburger .hamburger-inner::after,
+  .topmenu-mobile .hamburger .hamburger-inner::before {
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+  }
+
+  .topmenu-mobile .hamburger .hamburger-inner::before {
+    top: 13px;
+  }
+
+  .topmenu-mobile .hamburger .hamburger-inner::after {
+    top: 26px;
+  }
+
+  .topmenu-mobile .hamburger.is-active .hamburger-inner {
+    top: 5px;
+  }
+
+  .topmenu-mobile .hamburger.is-active .hamburger-inner::after {
+    top: 20px;
+  }
+
+  .topmenu-mobile .hamburger.is-active .hamburger-inner::before {
+    top: 10px;
   }
 
   .topmenu img {
-    max-width: 120px;
+    height: 70px;
+    width: auto;
   }
 
   .topmenu-navigation,
@@ -93,10 +159,11 @@
   }
 
   .topmenu-block {
-    width: 100vw;
-    height: 145px;
-    right: unset;
-    left: 0;
+    display: none;
+  }
+
+  .btn-standard {
+    margin-top: 20px;
   }
 }
 

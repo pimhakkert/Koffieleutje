@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Coffee;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 
@@ -23,6 +24,11 @@ class CoffeeBoxController extends Controller
      */
     public function index()
     {
-        return view('coffee_box');
+        $coffee = Coffee::all();
+        return view('coffee_box')->with('coffees',$coffee);
+    }
+
+    public function coffeeAjax() {
+
     }
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/additions/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/additions/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/Rai_master.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/3rd_party/hamburger.min.css') }}">
     <link rel="stylesheet" href="@yield('css')">
 </head>
 <body>

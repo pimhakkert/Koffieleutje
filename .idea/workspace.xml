@@ -18,6 +18,7 @@
       <list>
         <option value="Sass File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -121,6 +122,9 @@
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZOZzrXkk7CWhi6Ls7OsrYwDVLx" />
@@ -133,20 +137,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css/bootstrap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Prive/Vervara/Website/vervaramc" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\views\additions" />
+      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css\bootstrap" />
+      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css" />
       <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css\additions" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css\bootstrap" />
-      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\views\additions" />
-      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\app\Http\Controllers" />
-      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +186,26 @@
       <workItem from="1584867376233" duration="153000" />
       <workItem from="1584896560318" duration="4739000" />
       <workItem from="1584992059745" duration="2571000" />
-      <workItem from="1585074721906" duration="4627000" />
+      <workItem from="1585074721906" duration="6700000" />
+      <workItem from="1585159261649" duration="9141000" />
+      <workItem from="1585308436738" duration="5387000" />
+      <workItem from="1585410409873" duration="3415000" />
+      <workItem from="1585421164488" duration="4521000" />
+      <workItem from="1585476410198" duration="592000" />
+      <workItem from="1585498869651" duration="7523000" />
+      <workItem from="1585590100004" duration="1199000" />
+      <workItem from="1585675910961" duration="5247000" />
+      <workItem from="1585900335888" duration="3470000" />
+      <workItem from="1586075862642" duration="15340000" />
+      <workItem from="1586106566624" duration="600000" />
+      <workItem from="1586191130768" duration="6617000" />
+      <workItem from="1586593270339" duration="7400000" />
+      <workItem from="1586766739618" duration="13308000" />
+      <workItem from="1586885197788" duration="3096000" />
+      <workItem from="1586972959693" duration="1528000" />
+      <workItem from="1587124383202" duration="604000" />
+      <workItem from="1587134609265" duration="607000" />
+      <workItem from="1588066041388" duration="6322000" />
     </task>
     <servers />
   </component>
@@ -190,6 +213,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586077908689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586077908689" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586620532858">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586620532858" />
     <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1584729970081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -210,9 +241,9 @@
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584729970080" />
     <state width="1877" height="261" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1584715895082" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1584901369180">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586194494459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584901369180" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586194494459" />
   </component>
 </project>
