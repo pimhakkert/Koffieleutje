@@ -105,9 +105,7 @@ body {
   position: absolute;
   height: 22px;
   padding: 0 10px 2px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  white-space: nowrap;
   content: 'Popular choice';
   font-size: 14px;
   top: -22px;
