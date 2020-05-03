@@ -253,6 +253,9 @@ function addCup(cupObject) {
 
     boxCup.classList.remove('cup-item-empty');
 
+    //Check if user is allowed to proceed to next page
+
+
     //Close modal
     if(modalOpen) closeModal();
 }

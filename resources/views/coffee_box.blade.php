@@ -18,19 +18,19 @@
             <h3>Choose your package size.</h3>
             <div class="coffee-box-step1-buttons">
                 <div class="coffee-box-step1-buttons-button" data-packagesize="12" onclick="setPackageSize(this)">
-                    <p>12 capsules - <span>€ 4,99</span></p>
+                    <p>12 capsules</p><span>€ 4,99</span>
                 </div>
                 <div class="coffee-box-step1-buttons-button" data-packagesize="24" onclick="setPackageSize(this)">
-                    <p>24 capsules - <span>€ 9,49</span></p>
+                    <p>24 capsules</p><span>€ 9,49</span>
                 </div>
                 <div class="coffee-box-step1-buttons-button popular-choice" data-packagesize="36" onclick="setPackageSize(this)">
-                    <p>36 capsules - <span>€ 13,99</span></p>
+                    <p>36 capsules</p><span>€ 13,99</span>
                 </div>
                 <div class="coffee-box-step1-buttons-button" data-packagesize="48" onclick="setPackageSize(this)">
-                    <p>48 capsules - <span>€ 16,99</span></p>
+                    <p>48 capsules</p><span>€ 16,99</span>
                 </div>
                 <div class="coffee-box-step1-buttons-button" data-packagesize="60" onclick="setPackageSize(this)">
-                    <p>60 capsules - <span>€ 19,99</span></p>
+                    <p>60 capsules</p><span>€ 19,99</span>
                 </div>
             </div>
         </div>
