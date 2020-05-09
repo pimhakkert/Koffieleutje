@@ -5,29 +5,28 @@
         </div>
         <div class="topmenu-navigation col-9">
             <a href="{{ route('home_index') }}" class="{{ request()->routeIs('home_index') ? 'active' : '' }}">
-                <h2>Home</h2>
+                Home
                 <span></span>
             </a>
             <a href="{{ route('coffeebox_index') }}"
                class="{{ request()->routeIs('coffeebox_index') ? 'active' : '' }}">
-                <h2>Koffie box</h2>
+                Koffie box
                 <span></span>
             </a>
             <a href="{{ route('home_index') }}" class="{{ request()->routeIs('') ? 'active' : '' }}">
-                <h2>Koffie</h2>
+                Koffie
                 <span></span>
             </a>
             <a href="{{ route('home_index') }}" class="{{ request()->routeIs('') ? 'active' : '' }}">
-                <h2>Info</h2>
+                Info
                 <span></span>
             </a>
             <a href="{{ route('home_index') }}" class="{{ request()->routeIs('') ? 'active' : '' }}">
-                <h2>Contact</h2>
+                Contact
                 <span></span>
             </a>
             <a href="{{ route('home_index') }}">
-                <h2><img src="{{ asset('imgs/shopping-bag.svg') }}" alt="Shopping cart"></h2>
-                <span></span>
+                <img src="{{ asset('imgs/shopping-bag.svg') }}" alt="Shopping cart">
             </a>
         </div>
         <div class="topmenu-mobile col-3">

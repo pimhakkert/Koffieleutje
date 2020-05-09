@@ -28,6 +28,8 @@
 
         a {
             margin: 0 20px;
+            font-size: 22px;
+            font-weight: lighter;
             &:first-of-type {
                 margin-left: 0;
             }
@@ -37,10 +39,8 @@
             }
 
             &:hover {
-                h2 {
-                    color: #B7B7B7;
-                    transition: color 200ms ease;
-                }
+                color: #B7B7B7;
+                transition: color 200ms ease;
             }
             &.active span {
                 border-bottom: 1px solid white;

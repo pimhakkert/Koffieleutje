@@ -34,6 +34,8 @@
 
 .topmenu-navigation a {
   margin: 0 20px;
+  font-size: 22px;
+  font-weight: lighter;
 }
 
 .topmenu-navigation a:first-of-type {
@@ -44,7 +46,7 @@
   margin-right: 0;
 }
 
-.topmenu-navigation a:hover h2 {
+.topmenu-navigation a:hover {
   color: #B7B7B7;
   transition: color 200ms ease;
 }
