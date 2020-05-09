@@ -9185,7 +9185,7 @@ a:hover {
   padding: 10px 30px;
   font-family: 'Lato', sans-serif;
   margin: 0 auto;
-  display: block;
+  display: inline-block;
   box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   cursor: pointer;
 }

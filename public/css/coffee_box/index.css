@@ -4,6 +4,14 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 1600px) {
+  .coffee-box-step2-selection-text {
+    padding: 20px !important;
+    flex: 0 0 28% !important;
+    max-width: 28% !important;
+  }
+}
+
 @media only screen and (max-width: 1500px) {
   .coffee-box-title div {
     padding: 30px !important;
@@ -89,6 +97,25 @@ body {
   }
 
   .coffee-box-step1-buttons-button:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .coffee-box-step2 {
+    background-color: #453736 !important;
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+
+  .coffee-box-step2::before {
+    background-color: #453736 !important;
+  }
+
+  .coffee-box-step2::after {
+    background-color: #453736 !important;
+  }
+
+  .coffee-box-step2 h3 {
+    color: white !important;
     margin-bottom: 0;
   }
 
@@ -231,6 +258,7 @@ body {
 .coffee-box-step2-selection {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .coffee-box-step2-selection-box {
@@ -238,6 +266,46 @@ body {
   background-color: #453736;
   padding: 15px;
   box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
+}
+
+.coffee-box-step2-selection-text {
+  background-color: #453736;
+  padding: 40px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
+  position: relative;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.coffee-box-step2-selection-text p {
+  color: #999999;
+}
+
+.coffee-box-step2-selection-text.next-step-available {
+  pointer-events: unset;
+}
+
+.coffee-box-step2-selection-text.next-step-available::after {
+  display: none;
+  pointer-events: unset;
+}
+
+.coffee-box-step2-selection-text::after {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
 }
 
 .coffee-box-step2-modal {

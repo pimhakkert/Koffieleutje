@@ -49687,10 +49687,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/partials/cup-selector.scss":
+/*!***************************************************!*\
+  !*** ./resources/sass/partials/cup-selector.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*********************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/header.scss ./resources/sass/Rai_master.scss ./resources/sass/footer.scss ./resources/sass/coffee_box/index.scss ***!
-  \*********************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/header.scss ./resources/sass/Rai_master.scss ./resources/sass/footer.scss ./resources/sass/coffee_box/index.scss ./resources/sass/partials/cup-selector.scss ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49698,7 +49709,8 @@ __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\
 __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\header.scss */"./resources/sass/header.scss");
 __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\Rai_master.scss */"./resources/sass/Rai_master.scss");
 __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\footer.scss */"./resources/sass/footer.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\coffee_box\index.scss */"./resources/sass/coffee_box/index.scss");
+__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\coffee_box\index.scss */"./resources/sass/coffee_box/index.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\partials\cup-selector.scss */"./resources/sass/partials/cup-selector.scss");
 
 
 /***/ })

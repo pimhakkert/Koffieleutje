@@ -83,30 +83,15 @@
                     </div>
                 </div>
                 <div class="coffee-box-step2-selection-text col-md-4">
-                    <p><em>ipsum dolor sit amet, consectetur adipisicing elit. In inventore itaque nulla odit ullam
-                            voluptatem! Accusantium ad aliquid animi aspernatur dolore reiciendis voluptas voluptatem
-                            voluptatum?</em></p>
-                    <button class="btn-standard-2">Continue</button>
+                    <h2>Next step: Frequency</h2>
+                    <p>Now that you have put together a box full of all your favorite tastes of coffee, it's time to
+                    select the frequency of deliveries.</p>
+                    <a href="{{ route('coffeebox_final') }}" class="btn-standard-2">Continue</a>
                 </div>
             </div>
-            <div class="coffee-box-step2-modal" style="display: none;">
-                <div class="coffee-box-step2-modal-inner">
-                    <img class="coffee-box-step2-modal-inner-close" src="{{ asset('imgs/coffee_box/modal_close.svg') }}" alt="Close modal screen" onclick="closeModal()">
-                    <div class="coffee-box-step2-modal-inner-text">
-                        <h2>Our selection</h2>
-                        <p>Pick your favorites from our selection.</p>
-                    </div>
-                    <div class="coffee-box-step2-modal-inner-capsules">
-
-                    </div>
-                    <div class="coffee-box-step2-modal-inner-paginate">
-                        <img class="coffee-box-step2-modal-inner-paginate-left" src="{{ asset('imgs/coffee_box/modal_left.svg') }}" alt="Show previous cups" onclick="paginateModal(modalPage-1,cupsPerPage)">
-                        <div class="coffee-box-step2-modal-inner-paginate-pages">
-
-                        </div>
-                        <img class="coffee-box-step2-modal-inner-paginate-right" src="{{ asset('imgs/coffee_box/modal_right.svg') }}" alt="Show next cups" onclick="paginateModal(modalPage+1,cupsPerPage)">
-                    </div>
-                </div>
+            <div class="cup-selector cup-selector-modal">
+                @include('additions.cup-select')
+                <script src="{{ asset('js/partials/cup-selector.js') }}"></script>
             </div>
         </div>
     </div>

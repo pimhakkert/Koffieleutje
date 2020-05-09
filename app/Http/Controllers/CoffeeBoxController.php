@@ -18,17 +18,22 @@ class CoffeeBoxController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     *
      *
      * @return Renderable
      */
     public function index()
     {
-        $coffee = Coffee::all();
-        return view('coffee_box')->with('coffees',$coffee);
+        return view('coffee_box');
     }
 
-    public function coffeeAjax() {
-
+    /**
+     *
+     *
+     * @return Renderable
+     */
+    public function final()
+    {
+        return view('coffee_box_final');
     }
 }
