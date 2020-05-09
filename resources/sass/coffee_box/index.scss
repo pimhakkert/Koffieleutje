@@ -7,8 +7,12 @@ body {
 @media only screen and (max-width: 1600px) {
     .coffee-box-step2-selection-text {
         padding: 20px !important;
-        flex: 0 0 28% !important;
-        max-width: 28% !important;
+        flex: 0 0 36% !important;
+        max-width: 36% !important;
+    }
+
+    .coffee-box-step1-buttons div {
+        padding: 9px 5px 6px 5px !important;
     }
 }
 
