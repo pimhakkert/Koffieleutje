@@ -57,6 +57,14 @@
   border-radius: 50%;
   margin: 0 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.cup-selector-inner-paginate-pages div p {
+  color: #dfdfdf;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 .cup-selector-inner-paginate-pages div.paginateActive {
@@ -97,6 +105,7 @@
 
 .cup-selector.cup-selector-mobile .cup-selector-inner-capsules {
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 45px;
 }
 
 .cup-selector.cup-selector-mobile .cup-selector-inner-close {
@@ -105,5 +114,18 @@
 
 .cup-selector.cup-selector-mobile .cup-selector-inner-text {
   display: none;
+}
+
+.cup-selector.cup-selector-mobile .cup-item-top-cupsize {
+  width: 40px;
+  height: 40px;
+}
+
+.cup-selector.cup-selector-mobile .cup-item-bottom p:last-of-type {
+  font-size: 14px !important;
+}
+
+.cup-selector.cup-selector-mobile .cup-item-detail-link {
+  width: 40px;
 }
 

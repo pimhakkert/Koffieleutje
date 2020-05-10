@@ -56,6 +56,13 @@
                     border-radius: 50%;
                     margin: 0 10px;
                     cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        color: #dfdfdf;
+                        font-size: 17px;
+                        line-height: 28px;
+                    }
                     &.paginateActive {
                         background-color: #221918;
                     }
@@ -98,6 +105,7 @@
             &-inner {
                 &-capsules {
                     grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 45px;
                 }
                 &-close {
                     display: none;
@@ -105,6 +113,21 @@
                 &-text {
                     display: none;
                 }
+            }
+
+        }
+        .cup-item {
+            &-top-cupsize {
+                width: 40px;
+                height: 40px;
+            }
+            &-bottom {
+                p:last-of-type {
+                    font-size: 14px !important;
+                }
+            }
+            &-detail-link {
+                width: 40px;
             }
         }
     }

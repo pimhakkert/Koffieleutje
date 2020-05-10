@@ -209,6 +209,11 @@ function setCupSelectorModalPaginateButtons(totalCupSelectorPages) {
     for (let i = 1; i < totalCupSelectorPages + 1; i++) {
         let button = document.createElement('div');
         button.className = 'cup-selector-inner-paginate-pages-button';
+
+        let buttonNumber = document.createElement('p');
+        buttonNumber.innerText = i;
+
+        button.appendChild(buttonNumber);
         div.appendChild(button);
 
         button.addEventListener('click', () => {
