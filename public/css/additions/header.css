@@ -109,6 +109,7 @@
   }
 
   .topmenu-mobile {
+    outline: none;
     align-self: center;
     display: flex;
     align-items: center;
