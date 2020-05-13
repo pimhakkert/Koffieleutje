@@ -106,6 +106,7 @@
 .cup-selector.cup-selector-mobile .cup-selector-inner-capsules {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 45px;
+  grid-row-gap: 12px;
 }
 
 .cup-selector.cup-selector-mobile .cup-selector-inner-close {
@@ -116,13 +117,24 @@
   display: none;
 }
 
+.cup-selector.cup-selector-mobile .cup-selector-inner-paginate {
+  margin-top: 25px;
+}
+
 .cup-selector.cup-selector-mobile .cup-item-top-cupsize {
   width: 40px;
   height: 40px;
 }
 
+.cup-selector.cup-selector-mobile .cup-item-bottom p:first-of-type {
+  text-align: center;
+  color: #0A0A0A;
+  font-weight: normal;
+}
+
 .cup-selector.cup-selector-mobile .cup-item-bottom p:last-of-type {
   font-size: 14px !important;
+  display: none;
 }
 
 .cup-selector.cup-selector-mobile .cup-item-detail-link {

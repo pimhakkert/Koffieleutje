@@ -109,7 +109,8 @@ body {
 
             h3 {
                 color: white !important;
-                margin-bottom: 0;
+                margin-bottom: 40px;
+                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
             }
 
             &-selection {
@@ -361,6 +362,19 @@ body {
             }
         }
     }
+    .cup-selector-mobile {
+        position: relative;
+        background-color: #9C6F44;
+        padding: 25px 0;
+        z-index: 1;
+        &::before {
+            background-color: #9C6F44;
+        }
+
+        &::after {
+            background-color: #9C6F44;
+        }
+    }
 }
 
 .cup-item {
@@ -483,7 +497,7 @@ body {
     }
 }
 
-.app-background {
+.app-background, .coffee-box .cup-selector-mobile {
     &::before {
         position: absolute;
         content: '';

@@ -106,12 +106,16 @@
                 &-capsules {
                     grid-template-columns: 1fr 1fr;
                     grid-column-gap: 45px;
+                    grid-row-gap: 12px;
                 }
                 &-close {
                     display: none;
                 }
                 &-text {
                     display: none;
+                }
+                &-paginate {
+                    margin-top: 25px;
                 }
             }
 
@@ -122,8 +126,14 @@
                 height: 40px;
             }
             &-bottom {
+                p:first-of-type {
+                    text-align: center;
+                    color: #0A0A0A;
+                    font-weight: normal;
+                }
                 p:last-of-type {
                     font-size: 14px !important;
+                    display: none;
                 }
             }
             &-detail-link {

@@ -120,7 +120,8 @@ body {
 
   .coffee-box-step2 h3 {
     color: white !important;
-    margin-bottom: 0;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   }
 
   .coffee-box-step2-selection {
@@ -412,6 +413,21 @@ body {
   height: auto;
 }
 
+.coffee-box .cup-selector-mobile {
+  position: relative;
+  background-color: #9C6F44;
+  padding: 25px 0;
+  z-index: 1;
+}
+
+.coffee-box .cup-selector-mobile::before {
+  background-color: #9C6F44;
+}
+
+.coffee-box .cup-selector-mobile::after {
+  background-color: #9C6F44;
+}
+
 .cup-item-holder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -529,7 +545,8 @@ body {
   color: white !important;
 }
 
-.app-background::before {
+.app-background::before,
+.coffee-box .cup-selector-mobile::before {
   position: absolute;
   content: '';
   height: 100%;
@@ -539,7 +556,8 @@ body {
   left: -20vw;
 }
 
-.app-background::after {
+.app-background::after,
+.coffee-box .cup-selector-mobile::after {
   position: absolute;
   content: '';
   height: 100%;
