@@ -16,3 +16,6 @@
         <img class="cup-selector-inner-paginate-right" src="{{ asset('imgs/coffee_box/modal_right.svg') }}" alt="Show next cups" onclick="paginateSelector(cupSelectorPage+1,cupsPerPage)">
     </div>
 </div>
+<div class="cup-selector-mobile-cart">
+
+</div>

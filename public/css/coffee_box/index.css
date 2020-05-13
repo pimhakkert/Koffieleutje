@@ -107,7 +107,7 @@ body {
   .coffee-box-step2 {
     background-color: #453736 !important;
     padding-top: 45px !important;
-    padding-bottom: 45px !important;
+    padding-bottom: 0 !important;
   }
 
   .coffee-box-step2::before {

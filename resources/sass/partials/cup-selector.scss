@@ -1,4 +1,7 @@
 .cup-selector {
+    &-mobile-cart {
+        display: none;
+    }
     &-inner {
         &-capsules {
             display: grid;
@@ -125,6 +128,13 @@
                 width: 40px;
                 height: 40px;
             }
+            &-top {
+                padding-bottom: 100%;
+                height: 0;
+                &-background {
+                    position: absolute;
+                }
+            }
             &-bottom {
                 p:first-of-type {
                     text-align: center;
@@ -139,6 +149,11 @@
             &-detail-link {
                 width: 40px;
             }
+        }
+        &-cart {
+            display: block;
+            position: fixed;
+            background-color: blue;
         }
     }
 }
