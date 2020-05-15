@@ -41,9 +41,9 @@ class CoffeesTableSeeder extends Seeder
     {
         for ($i = 0; $i < 20; $i++)
             DB::table('coffees')->insert([
-                'name' => array_rand(self::coffeeNames).'Lungo',
-                'description' => array_rand(self::descriptions),
-                'image_name' => 'colors/'.array_rand(self::imageNames),
+                'name' => self::coffeeNames[array_rand(self::coffeeNames)].'Lungo',
+                'description' => self::descriptions[array_rand(self::descriptions)],
+                'image_name' => 'colors/'.self::imageNames[array_rand(self::imageNames)],
             ]);
     }
 }
