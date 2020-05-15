@@ -5,6 +5,33 @@ use Illuminate\Support\Facades\DB;
 
 class CoffeesTableSeeder extends Seeder
 {
+    private const coffeeNames = array(
+        'Envivio',
+        'Patata',
+        'Fuoco',
+        'Zenzero',
+        'Melaza',
+        'Cetriolo',
+        'Sutropa',
+        'Tertrana',
+        'Siomaso'
+    );
+
+    private const descriptions = array(
+        'Strong and energetic',
+        'Mild and milky',
+        'Rich in taste',
+        'A hit of flavour'
+    );
+
+    private const imageNames = array(
+        'brown.png',
+        'green.png',
+        'orange.png',
+        'purple.png',
+        'red.png'
+    );
+
     /**
      * Run the database seeds.
      *
@@ -12,11 +39,11 @@ class CoffeesTableSeeder extends Seeder
      */
     public function run()
     {
-        for($i=0;$i<20;$i++)
-        DB::table('coffees')->insert([
-            'name' => 'Envivio Lungo',
-            'description' => 'Strong and energetic',
-            'image_name' => 'red.png',
-        ]);
+        for ($i = 0; $i < 20; $i++)
+            DB::table('coffees')->insert([
+                'name' => array_rand(self::coffeeNames).'Lungo',
+                'description' => array_rand(self::descriptions),
+                'image_name' => 'colors/'.array_rand(self::imageNames),
+            ]);
     }
 }
