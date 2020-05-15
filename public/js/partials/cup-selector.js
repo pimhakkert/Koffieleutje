@@ -184,6 +184,7 @@ function paginateSelector(pageNumber, numOfCapsules) {
     cupSelector.innerHTML = '';
 
     setPaginateButtonToActive(pageNumber);
+    setPaginateButtonMiddle(pageNumber);
 
     //Create the capsules as HTML and add them into the modal
     for (let i = min; i < max; i++) {
@@ -214,12 +215,56 @@ function setCupSelectorModalPaginateButtons(totalCupSelectorPages) {
         buttonNumber.innerText = i;
 
         button.appendChild(buttonNumber);
+        if(totalCupSelectorPages > 3) button.style.display = 'none';
         div.appendChild(button);
 
         button.addEventListener('click', () => {
             setPaginateButtonToActive(i);
             paginateSelector(i, cupsPerPage);
         });
+    }
+}
+
+//Change css for pagination
+function setPaginateButtonMiddle(selectedPage) {
+    if(totalCupSelectorPages <= 3) return;
+    let div = document.getElementsByClassName('cup-selector-inner-paginate-pages')[0];
+
+    let buttons = div.querySelectorAll('.cup-selector-inner-paginate-pages-button');
+
+    //Go through all of the paginate buttons
+    for(let i=0;i<buttons.length;i++)
+    {
+        buttons[i].style.display = 'none';
+
+        //If first page
+        if(selectedPage === 1)
+        {
+            if(i+1 === 1 || i+1 === 2)
+            {
+                div.style.margin = '0 35px';
+                buttons[i].style.display = 'flex';
+                continue;
+            }
+        }
+        //If last page
+        else if(selectedPage === totalCupSelectorPages)
+        {
+            if(i+1 === totalCupSelectorPages || i+1 === totalCupSelectorPages-1)
+            {
+                div.style.margin = '0 35px';
+                buttons[i].style.display = 'flex';
+                continue;
+            }
+        }
+
+        //If in between page
+        if(selectedPage !== 1 && i+1 === selectedPage-1 || i+1 === selectedPage || i+1 === selectedPage+1)
+        {
+            buttons[i].style.display = 'flex';
+            div.style.margin = '0 10px';
+        }
+
     }
 }
 
