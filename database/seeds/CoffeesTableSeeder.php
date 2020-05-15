@@ -14,7 +14,10 @@ class CoffeesTableSeeder extends Seeder
         'Cetriolo',
         'Sutropa',
         'Tertrana',
-        'Siomaso'
+        'Siomaso',
+        'Condatio',
+        'Porisimo',
+        'Raterina',
     );
 
     private const descriptions = array(
@@ -41,9 +44,9 @@ class CoffeesTableSeeder extends Seeder
     {
         for ($i = 0; $i < 20; $i++)
             DB::table('coffees')->insert([
-                'name' => self::coffeeNames[array_rand(self::coffeeNames)].'Lungo',
+                'name' => self::coffeeNames[array_rand(self::coffeeNames)] . ' Lungo',
                 'description' => self::descriptions[array_rand(self::descriptions)],
-                'image_name' => 'colors/'.self::imageNames[array_rand(self::imageNames)],
+                'image_name' => 'colors/' . self::imageNames[array_rand(self::imageNames)],
             ]);
     }
 }
