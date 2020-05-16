@@ -12,6 +12,7 @@ let totalCupSelectorPages = 1;
 let detailLinks = null;
 let coffeeBox = Array(6).fill(undefined);
 let currentBoxIndex = null;
+let amountToFillLastPage = null;
 //end old stuff
 
 window.onload = (event) => {
@@ -77,7 +78,7 @@ function loadCapsules() {
 }
 
 //Place the loaded cups into the cup selector
-function placeCupInSelector(cup, cupSelector) {
+function placeCupInSelector(cup, cupSelector, invisible = false) {
     let cupSelectorItem = document.createElement('div');
     cupSelectorItem.className = 'cup-item modal-item';
 
@@ -138,6 +139,12 @@ function placeCupInSelector(cup, cupSelector) {
     cupDescription.innerText = cup.description;
     cupBottom.appendChild(cupDescription);
 
+    if(invisible)
+    {
+        cupSelectorItem.style.opacity = '0';
+        cupSelectorItem.style.pointerEvents = 'none';
+    }
+
     //Add the cup to the modal
     cupSelector.appendChild(cupSelectorItem);
 }
@@ -153,8 +160,12 @@ function paginateSelector(pageNumber, numOfCapsules) {
 
     //If there are not enough capsules for the last page, change the for loop iteration length
     if (max > cupSelectorItems.length) {
-        let removeNumber = numOfCapsules - (cupSelectorItems.length % numOfCapsules);
-        max -= removeNumber;
+        amountToFillLastPage = numOfCapsules - (cupSelectorItems.length % numOfCapsules);
+        max -= amountToFillLastPage;
+    }
+    else
+    {
+        amountToFillLastPage = null;
     }
 
     //Decide if the pagination is valid and change pagination arrows if so
@@ -189,6 +200,15 @@ function paginateSelector(pageNumber, numOfCapsules) {
     //Create the capsules as HTML and add them into the modal
     for (let i = min; i < max; i++) {
         placeCupInSelector(cupSelectorItems[i], cupSelector);
+    }
+
+    //Create 'empty' cups so the pagination doesnt jump up when there aren't enough cups
+    if(amountToFillLastPage !== null && amountToFillLastPage !== 0)
+    {
+        for(let i = 1; i<amountToFillLastPage; i++)
+        {
+            placeCupInSelector(cupSelectorItems[i], cupSelector, true)
+        }
     }
 }
 
