@@ -240,31 +240,27 @@ function setPaginateButtonMiddle(selectedPage) {
         //If first page
         if(selectedPage === 1)
         {
-            if(i+1 === 1 || i+1 === 2)
+            if(i+1 === 1 || i+1 === 2 || i+1 === 3)
             {
-                div.style.margin = '0 35px';
                 buttons[i].style.display = 'flex';
-                continue;
             }
         }
         //If last page
         else if(selectedPage === totalCupSelectorPages)
         {
-            if(i+1 === totalCupSelectorPages || i+1 === totalCupSelectorPages-1)
+            if(i+1 === totalCupSelectorPages || i+1 === totalCupSelectorPages-1 || i+1 === totalCupSelectorPages-2)
             {
-                div.style.margin = '0 35px';
                 buttons[i].style.display = 'flex';
-                continue;
             }
         }
-
         //If in between page
-        if(selectedPage !== 1 && i+1 === selectedPage-1 || i+1 === selectedPage || i+1 === selectedPage+1)
+        else
         {
-            buttons[i].style.display = 'flex';
-            div.style.margin = '0 10px';
+            if(i+1 === selectedPage-1 || i+1 === selectedPage || i+1 === selectedPage+1)
+            {
+                buttons[i].style.display = 'flex';
+            }
         }
-
     }
 }
 
