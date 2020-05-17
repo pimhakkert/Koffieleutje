@@ -159,7 +159,6 @@ body {
   z-index: 2;
   background-color: #301A17;
   padding: 30px 50px;
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
 }
 
 .coffee-box-title div p {
@@ -217,7 +216,6 @@ body {
   height: -moz-max-content;
   height: max-content;
   border-bottom: 3px solid #453736;
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
 }
 
 .coffee-box-step1-buttons div p {
@@ -270,7 +268,6 @@ body {
   max-width: 620px;
   background-color: #453736;
   padding: 15px;
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
 }
 
 .coffee-box-step2-selection-text {
@@ -279,7 +276,6 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   position: relative;
   pointer-events: none;
   -webkit-user-select: none;
@@ -358,7 +354,6 @@ body {
 }
 
 .coffee-box-step2-modal-inner-capsules .cup-item-top-add-img {
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   border-radius: 50%;
 }
 
@@ -402,7 +397,6 @@ body {
 }
 
 .coffee-box-step2-modal-inner-paginate img {
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   border-radius: 50%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -449,14 +443,13 @@ body {
 
 .cup-item-top-cupsize {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 5px;
+  right: 5px;
   width: 50px;
   height: 50px;
 }
 
 .cup-item-top-add {
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -518,21 +511,19 @@ body {
 
 .cup-item-detail-edit {
   cursor: pointer;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
   position: absolute;
   width: 45px;
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   border-radius: 50px;
 }
 
 .cup-item-detail-link {
   cursor: pointer;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   position: absolute;
   width: 45px;
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   border-radius: 50px;
 }
 

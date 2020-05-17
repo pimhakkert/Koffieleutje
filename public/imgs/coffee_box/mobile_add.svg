@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="add_button" data-name="add button" transform="translate(0.064 -0.158)">
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="13" cy="13" r="13" transform="translate(-0.064 0.158)" fill="#221918"/>
+    <line id="Line_3" data-name="Line 3" x2="13.854" transform="translate(6.005 13.171)" fill="none" stroke="#9c6f44" stroke-linecap="round" stroke-width="2"/>
+    <path id="Path_10" data-name="Path 10" d="M0,0H13.854" transform="translate(12.932 6.244) rotate(90)" fill="none" stroke="#9c6f44" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

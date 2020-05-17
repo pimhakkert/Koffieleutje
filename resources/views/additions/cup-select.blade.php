@@ -9,11 +9,17 @@
 
     </div>
     <div class="cup-selector-inner-paginate">
-        <img class="cup-selector-inner-paginate-left" src="{{ asset('imgs/coffee_box/modal_left.svg') }}" alt="Show previous cups" onclick="paginateSelector(cupSelectorPage-1,cupsPerPage)">
+        <img class="cup-selector-inner-paginate-left normal-shadow" src="{{ asset('imgs/coffee_box/modal_left.svg') }}" alt="Show previous cups" onclick="paginateSelector(cupSelectorPage-1,cupsPerPage)">
         <div class="cup-selector-inner-paginate-pages">
-
         </div>
-        <img class="cup-selector-inner-paginate-right" src="{{ asset('imgs/coffee_box/modal_right.svg') }}" alt="Show next cups" onclick="paginateSelector(cupSelectorPage+1,cupsPerPage)">
+        <img class="cup-selector-inner-paginate-right normal-shadow" src="{{ asset('imgs/coffee_box/modal_right.svg') }}" alt="Show next cups" onclick="paginateSelector(cupSelectorPage+1,cupsPerPage)">
+    </div>
+</div>
+<div class="cup-selector-mobile-cart-button">
+    <p class="cup-selector-mobile-cart-button-continue normal-shadow"><span>Continue </span></p>
+    <div>
+        <span  class="cup-selector-mobile-cart-button-content"></span>
+        <img src="{{ asset('imgs/mobile-shopping-bag.svg') }}" alt="">
     </div>
 </div>
 <div class="cup-selector-mobile-cart">

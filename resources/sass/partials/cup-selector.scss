@@ -23,7 +23,6 @@
                         }
 
                         &-img {
-                            box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
                             border-radius: 50%;
                         }
                     }
@@ -72,7 +71,6 @@
                 }
             }
             img {
-                box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
                 border-radius: 50%;
                 user-select: none;
                 cursor: pointer;
@@ -104,6 +102,59 @@
     }
 
     &.cup-selector-mobile {
+        .cup-selector-mobile-cart {
+            &-button {
+                display: flex;
+                position: fixed;
+                z-index: 10;
+                right: 10vw;
+                bottom: 10vw;
+                border-radius: 50%;
+
+                &-continue {
+                    background-color: #453736;
+                    width: 60px;
+                    border-radius: 50px;
+                    margin-right: -60px;
+                    z-index: -1;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0;
+                    transition: all 200ms ease;
+                    span {
+                        transition: opacity 100ms ease;
+                        color: white;
+                        opacity: 0;
+                    }
+                    &.on-continue {
+                        z-index: 2;
+                        width: 80vw;
+                        span {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                div {
+                    position: relative;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                    span {
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        color: white;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+
         .cup-selector {
             &-inner {
                 &-capsules {
@@ -134,6 +185,14 @@
                 &-background {
                     position: absolute;
                 }
+                &-add {
+                    opacity: 1;
+                    width: 40px;
+                    left: 5px;
+                    bottom: 5px;
+                    top: unset;
+                    transform: unset;
+                }
             }
             &-bottom {
                 p:first-of-type {
@@ -149,11 +208,6 @@
             &-detail-link {
                 width: 40px;
             }
-        }
-        &-cart {
-            display: block;
-            position: fixed;
-            background-color: blue;
         }
     }
 }

@@ -10,7 +10,6 @@ let cupSelectorItems = null;
 let cupSelectorPage = 1;
 let totalCupSelectorPages = 1;
 let detailLinks = null;
-let coffeeBox = Array(6).fill(undefined);
 let currentBoxIndex = null;
 let amountToFillLastPage = null;
 //end old stuff
@@ -98,7 +97,7 @@ function placeCupInSelector(cup, cupSelector, invisible = false) {
     cupTop.appendChild(cupBackground);
 
     let cupInfoLink = document.createElement('a');
-    cupInfoLink.className = 'cup-item-detail-link';
+    cupInfoLink.className = 'cup-item-detail-link normal-shadow';
     cupInfoLink.href = location.protocol + '//' + location.host + '/koffie/' + cup.id;
     cupTop.appendChild(cupInfoLink);
 
@@ -117,11 +116,15 @@ function placeCupInSelector(cup, cupSelector, invisible = false) {
 
     let cupAddImg = document.createElement('img');
     cupAddImg.src = location.protocol + '//' + location.host + '/imgs/coffee_box/cups/big_add.svg';
-    cupAddImg.className = 'cup-item-top-add-img';
+    cupAddImg.className = 'cup-item-top-add-img normal-shadow';
 
     cupAddImg.addEventListener('click', (e) => {
-        if(modalEditMode) addOrEditCup(true, currentBoxIndex, cup);
-        else addOrEditCup(false, currentBoxIndex, cup);
+        if(modalEditMode) {
+            addOrEditCup(true, currentBoxIndex, cup);
+        }
+        else {
+            addOrEditCup(false, currentBoxIndex, cup);
+        }
     });
 
     cupAdd.appendChild(cupAddImg);
@@ -199,6 +202,7 @@ function paginateSelector(pageNumber, numOfCapsules) {
 
     //Create the capsules as HTML and add them into the modal
     for (let i = min; i < max; i++) {
+        if(mobileMode) placeCupInSelector(cupSelectorItems[i], cupSelector);
         placeCupInSelector(cupSelectorItems[i], cupSelector);
     }
 
@@ -324,10 +328,10 @@ document.onkeydown = function (evt) {
 //Main cup add/edit function
 function addOrEditCup(isEdit, index, cup) {
     isEdit = modalEditMode;
+
     //Edit the cupArray
-    cupArray[index] = cup;
     if (!isEdit) {
-        if (mobileMode) addToMobileCart(cup);
+        if (mobileMode) addToMobileCart(index, cup);
         else addToBox(index, cup);
     } else {
         if (mobileMode) editMobileCart(index, cup);
@@ -336,21 +340,69 @@ function addOrEditCup(isEdit, index, cup) {
 }
 
 //Change mobile cart
-function addToMobileCart(cup) {
+function addToMobileCart(index, cup) {
+    //If cup array is full
+    if(!addToFirstUndefinedInArray(cup))
+    {
+        mobileCartFull();
+        return;
+    }
 
+    editMobileCartButtonContent();
 }
 
 function editMobileCart(index, cup) {
-
+    cupArray[index] = cup;
 }
 
 function fillMobileCart(index, cup) {
 
 }
 
+function mobileCartFull() {
+    console.log('Mobile cart is full!');
+    let a = document.getElementsByClassName('cup-selector-mobile-cart-button-continue')[0];
+    a.classList.add('on-continue');
+}
+
+function addToFirstUndefinedInArray(cup)
+{
+    for(let i=0;i<cupArray.length;i++)
+    {
+        if(cupArray[i] === undefined || cupArray[i] === null)
+        {
+            cupArray[i] = cup;
+
+            //if this is the last cup
+            return i !== 5;
+        }
+    }
+    return false;
+}
+
+function editMobileCartButtonContent()
+{
+    document.getElementsByClassName('cup-selector-mobile-cart-button-content')[0].innerHTML = getSizeOfCupArray()+'/6';
+}
+
+
+//As the cup array is a fixed size of 6, we cant rely on the standard .length function to get array. instead we loop through it and
+//check if all elements are defined.
+function getSizeOfCupArray() {
+    let s = 0;
+    for(let i=0;i<cupArray.length;i++)
+    {
+        if(cupArray[i] !== null && cupArray[i] !== undefined) {
+            s++;
+        }
+    }
+    return s;
+}
+
+
 //Change regular box
 function addToBox(index, cup) {
-    coffeeBox[index] = cup;
+    cupArray[index] = cup;
 
     //Build the HTML and add the cupObject id to it
     let boxCup = document.getElementsByClassName('box-index')[index];
@@ -364,7 +416,7 @@ function addToBox(index, cup) {
 
     let boxCupTopEdit = document.createElement('img');
     boxCupTopEdit.setAttribute('data-index', index);
-    boxCupTopEdit.className = 'cup-item-detail-edit';
+    boxCupTopEdit.className = 'cup-item-detail-edit normal-shadow';
     boxCupTopEdit.src = location.protocol + '//' + location.host + '/imgs/coffee_box/edit.svg';
 
     boxCupTopEdit.addEventListener('click', () => {
@@ -376,7 +428,7 @@ function addToBox(index, cup) {
 
     let boxCupTopDetail = document.createElement('a');
     boxCupTopDetail.href = location.protocol + '//' + location.host + '/koffie/' + cup.id;
-    boxCupTopDetail.className = 'cup-item-detail-link';
+    boxCupTopDetail.className = 'cup-item-detail-link normal-shadow';
     boxCupTop.appendChild(boxCupTopDetail);
     let boxCupTopDetailImg = document.createElement('img');
     boxCupTopDetailImg.src = location.protocol + '//' + location.host + '/imgs/coffee_box/info.svg';

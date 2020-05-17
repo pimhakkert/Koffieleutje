@@ -50,10 +50,14 @@ function loadCupArray() {
 
     makeProxy();
     tryNextStep();
+    if(isArrayFull(cupArray)) mobileCartFull();
 
     if(mobileMode)  {
+        editMobileCartButtonContent();
         for(let i=0;i<cupArray.length;i++) {
-            if(cupArray[i] !== null && cupArray[i] !== undefined) fillMobileCart(i, cupArray);
+            if(cupArray[i] !== null && cupArray[i] !== undefined) {
+                fillMobileCart(i, cupArray);
+            }
         }
     }
     else {
@@ -75,12 +79,12 @@ function makeProxy() {
             target[property] = value;
 
             //If we're adding a cup
-            if(currentValue === undefined) {
+            if(currentValue === undefined || currentValue === null) {
                 cupArrayAdd(property, value);
             }
 
             //If we're changing a cup
-            if(currentValue !== undefined) {
+            if(currentValue !== undefined && currentValue !== null) {
                 cupArrayEdit(property, value);
             }
 

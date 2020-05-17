@@ -24,7 +24,6 @@
 }
 
 .cup-selector-inner-capsules .cup-item-top-add-img {
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   border-radius: 50%;
 }
 
@@ -76,7 +75,6 @@
 }
 
 .cup-selector-inner-paginate img {
-  box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.31);
   border-radius: 50%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -105,6 +103,61 @@
   background-color: #453736;
   padding: 30px 50px;
   position: relative;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  right: 10vw;
+  bottom: 10vw;
+  border-radius: 50%;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button-continue {
+  background-color: #453736;
+  width: 60px;
+  border-radius: 50px;
+  margin-right: -60px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  transition: all 200ms ease;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button-continue span {
+  transition: opacity 100ms ease;
+  color: white;
+  opacity: 0;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button-continue.on-continue {
+  z-index: 2;
+  width: 80vw;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button-continue.on-continue span {
+  opacity: 1;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button div {
+  position: relative;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.cup-selector.cup-selector-mobile .cup-selector-mobile-cart-button div span {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  position: absolute;
 }
 
 .cup-selector.cup-selector-mobile .cup-selector-inner-capsules {
@@ -139,6 +192,15 @@
   position: absolute;
 }
 
+.cup-selector.cup-selector-mobile .cup-item-top-add {
+  opacity: 1;
+  width: 40px;
+  left: 5px;
+  bottom: 5px;
+  top: unset;
+  transform: unset;
+}
+
 .cup-selector.cup-selector-mobile .cup-item-bottom p:first-of-type {
   text-align: center;
   color: #0A0A0A;
@@ -152,11 +214,5 @@
 
 .cup-selector.cup-selector-mobile .cup-item-detail-link {
   width: 40px;
-}
-
-.cup-selector.cup-selector-mobile-cart {
-  display: block;
-  position: fixed;
-  background-color: blue;
 }
 
