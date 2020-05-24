@@ -225,7 +225,7 @@
   left: 0;
   background-color: #221918;
   z-index: 10;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
 }
