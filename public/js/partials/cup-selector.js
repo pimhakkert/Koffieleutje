@@ -495,10 +495,12 @@ function fillBox(index, cup) {
 function openMobileCart() {
     document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'flex';
     document.body.style.overflowY = 'hidden';
+    document.style.overflowY = 'hidden';
 }
 
 //Closes the mobile cart
 function closeMobileCart() {
     document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'none';
     document.body.style.overflowY = 'auto';
+    document.style.overflowY = 'auto';
 }
