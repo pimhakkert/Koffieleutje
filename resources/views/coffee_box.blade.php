@@ -94,9 +94,7 @@
                 <script src="{{ asset('js/partials/cup-selector.js') }}"></script>
             </div>
         </div>
-        <div class="coffee-box-mobile-fixed-cart" style="display: none;">
-            Number of items in box:
-        </div>
+        @include('additions.cup-select-mobile-cart')
     </div>
 
 @endsection

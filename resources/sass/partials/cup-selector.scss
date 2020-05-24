@@ -110,6 +110,7 @@
                 right: 10vw;
                 bottom: 10vw;
                 border-radius: 50%;
+                cursor: pointer;
 
                 &-continue {
                     background-color: #453736;
@@ -208,6 +209,55 @@
             &-detail-link {
                 width: 40px;
             }
+        }
+    }
+}
+
+.cup-selector-mobile-cart {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #221918;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-close {
+        margin-left: auto;
+        width: 50px;
+        height: auto;
+    }
+    .wrap {
+        h4 {
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+        }
+    }
+    &-cups {
+        max-height: 600px;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-row-gap: 20px;
+        &-cup {
+
+            &.cup-item-empty {
+                background-color: #301A17;
+
+            }
+        }
+    }
+    &-continue {
+        margin-top: 25px;
+        background-color: #453736;
+        h4 {
+            text-align: center;
+            margin: 25px 0;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
         }
     }
 }

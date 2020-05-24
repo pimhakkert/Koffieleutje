@@ -490,3 +490,13 @@ function editBox(index, cup) {
 function fillBox(index, cup) {
     addToBox(index, cup);
 }
+
+//Opens the mobile cart
+function openMobileCart() {
+    document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'flex';
+}
+
+//Closes the mobile cart
+function closeMobileCart() {
+    document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'none';
+}

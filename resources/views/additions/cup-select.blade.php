@@ -15,13 +15,15 @@
         <img class="cup-selector-inner-paginate-right normal-shadow" src="{{ asset('imgs/coffee_box/modal_right.svg') }}" alt="Show next cups" onclick="paginateSelector(cupSelectorPage+1,cupsPerPage)">
     </div>
 </div>
-<div class="cup-selector-mobile-cart-button">
-    <p class="cup-selector-mobile-cart-button-continue normal-shadow"><span>Continue </span></p>
+<div class="cup-selector-mobile-cart-button" onclick="openMobileCart()">
+    <p class="cup-selector-mobile-cart-button-continue normal-shadow"><span>Continue</span></p>
     <div>
         <span  class="cup-selector-mobile-cart-button-content"></span>
         <img src="{{ asset('imgs/mobile-shopping-bag.svg') }}" alt="">
     </div>
 </div>
-<div class="cup-selector-mobile-cart">
 
-</div>
+
+
+
+
