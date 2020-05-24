@@ -331,7 +331,7 @@ function addOrEditCup(isEdit, index, cup) {
 
     //Edit the cupArray
     if (!isEdit) {
-        if (mobileMode) addToMobileCart(index, cup);
+        if (mobileMode) addToMobileCart(cup);
         else addToBox(index, cup);
     } else {
         if (mobileMode) editMobileCart(index, cup);
@@ -340,7 +340,7 @@ function addOrEditCup(isEdit, index, cup) {
 }
 
 //Change mobile cart
-function addToMobileCart(index, cup) {
+function addToMobileCart( cup) {
     //If cup array is full
     if(!addToFirstUndefinedInArray(cup))
     {
@@ -349,6 +349,31 @@ function addToMobileCart(index, cup) {
     }
 
     editMobileCartButtonContent();
+
+    let cartItems = document.getElementsByClassName('cup-selector-mobile-cart-cups-cup');
+    for(let i=0;i<cartItems.length;i++)
+    {
+        if(cartItems[i].classList.contains('cup-item-empty'))
+        {
+            let img = document.createElement('img');
+            img.src = location.protocol + '//' + location.host + '/imgs/coffee_box/cups/' + cup.image_name;
+
+            let text = document.createElement('p');
+            text.innerText = cup.name;
+
+            let cupSize = document.createElement('img');
+            cupSize.src = location.protocol + '//' + location.host + '/imgs/coffee_box/cups/' + packageSize / 6 + '.svg';
+
+            cartItems[i].appendChild(img);
+            cartItems[i].appendChild(text);
+            cartItems[i].appendChild(cupSize);
+            cartItems[i].classList.remove('cup-item-empty');
+            break;
+        }
+    }
+
+
+
 }
 
 function editMobileCart(index, cup) {
@@ -494,7 +519,7 @@ function fillBox(index, cup) {
 //Opens the mobile cart
 function openMobileCart() {
     document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'flex';
-    document.body.style.height = '100vh';
+    document.body.style.height = 'calc(100vh - calc(100vh - 100%))';
     document.body.style.overflowY = 'hidden';
 }
 

@@ -250,8 +250,20 @@
   grid-row-gap: 20px;
 }
 
+.cup-selector-mobile-cart-cups-cup {
+  display: flex;
+  background-color: #453736;
+  min-height: 0;
+  min-width: 0;
+}
+
 .cup-selector-mobile-cart-cups-cup.cup-item-empty {
   background-color: #301A17;
+}
+
+.cup-selector-mobile-cart-cups-cup img {
+  width: auto;
+  height: 100%;
 }
 
 .cup-selector-mobile-cart-continue {

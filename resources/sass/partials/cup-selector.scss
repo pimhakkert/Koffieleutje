@@ -243,10 +243,17 @@
         grid-auto-rows: 1fr;
         grid-row-gap: 20px;
         &-cup {
-
+            display: flex;
+            background-color: #453736;
+            min-height: 0;
+            min-width: 0;
             &.cup-item-empty {
                 background-color: #301A17;
 
+            }
+            img {
+                width: auto;
+                height: 100%;
             }
         }
     }
