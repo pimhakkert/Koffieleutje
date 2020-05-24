@@ -494,15 +494,13 @@ function fillBox(index, cup) {
 //Opens the mobile cart
 function openMobileCart() {
     document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'flex';
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.height = '100vh';
+    document.body.style.overflowY = 'hidden';
 }
 
 //Closes the mobile cart
 function closeMobileCart() {
     document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'none';
-    const scrollY = document.body.style.top;
-    document.body.style.position = '';
-    document.body.style.top = '';
-    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    document.body.style.height = '';
+    document.body.style.overflowY = '';
 }
