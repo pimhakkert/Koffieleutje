@@ -220,7 +220,7 @@
 .cup-selector-mobile-cart {
   position: fixed;
   width: 100vw;
-  height: 100%;
+  height: calc(100vh - calc(100vh - 100%));
   top: 0;
   left: 0;
   background-color: #221918;
