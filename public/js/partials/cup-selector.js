@@ -521,6 +521,7 @@ function openMobileCart() {
     document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'flex';
     document.body.style.height = 'calc(100vh - calc(100vh - 100%))';
     document.body.style.overflowY = 'hidden';
+    document.documentElement.style.overflowY = 'hidden';
 }
 
 //Closes the mobile cart
@@ -528,4 +529,5 @@ function closeMobileCart() {
     document.getElementsByClassName('cup-selector-mobile-cart')[0].style.display = 'none';
     document.body.style.height = '';
     document.body.style.overflowY = '';
+    document.documentElement.style.overflowY = '';
 }
