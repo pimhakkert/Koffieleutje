@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="{{ asset('css/additions/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/Rai_master.css') }}">
     <link rel="stylesheet" href="{{ asset('css/3rd_party/hamburger.min.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="@yield('css')">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+
+<script>
+    AOS.init();
+</script>
