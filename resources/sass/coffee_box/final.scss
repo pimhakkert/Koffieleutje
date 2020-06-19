@@ -1,0 +1,14 @@
+.wip {
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+    &-inner {
+        background-color: #301a17;
+        padding: 40px;
+        text-align: center;
+        p {
+            color: white;
+            margin-bottom: 0;
+        }
+    }
+}

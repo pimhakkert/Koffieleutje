@@ -15,9 +15,11 @@
             </div>
             <div class="col-lg-4 col-sm-12">
                 <h3>About us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi facilis laudantium nulla officia quos
-                    rerum, voluptatem? Ad facilis fugit inventore molestias quae ratione repellat suscipit unde.
-                    Consectetur corporis id nemo.</p>
+                <p>
+                    Koffieleutje is a coffee capsule webshop built for people who enjoy coffee and want a premium service.
+                    We buy our coffee beans from registered farmers from all over the world and we care for every single
+                    product we create.
+                </p>
             </div>
             <div class="col-lg-4 col-sm-12 footer-links">
                 <div>

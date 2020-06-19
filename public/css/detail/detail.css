@@ -1,0 +1,146 @@
+.section .detail {
+  margin: 100px 0;
+  justify-content: space-between;
+}
+
+.section .detail-left h1 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.section .detail-left h2 {
+  color: #999999;
+  background-color: #301A17;
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.section .detail-left img {
+  max-height: 237px;
+  width: auto;
+}
+
+.section .detail-right {
+  background-color: #453736;
+  padding: 30px 40px;
+}
+
+.section .detail-right-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section .detail-right h4 {
+  color: #999999;
+  background-color: #301A17;
+  padding: 3px 10px;
+  font-size: 16px;
+}
+
+.section .detail-right h4 span {
+  color: white;
+}
+
+.section .detail-right h4:first-of-type {
+  margin-bottom: 3px;
+}
+
+.section .detail-right h4:last-of-type {
+  margin-bottom: 0;
+}
+
+.section .detail-right p {
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.section .detail-right button {
+  height: 100%;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: 280%;
+  }
+
+  .section .detail {
+    margin-bottom: 0;
+  }
+
+  .section .detail-left {
+    padding: 0;
+  }
+
+  .section .detail-left img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    max-height: unset;
+  }
+
+  .section .detail-right {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section .detail-right::before {
+    background-color: #453736;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 10vw;
+    top: 0;
+    z-index: -1;
+    left: -10vw;
+  }
+
+  .section .detail-right::after {
+    background-color: #453736;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 10vw;
+    top: 0;
+    z-index: -1;
+    right: -10vw;
+  }
+
+  .section .detail-right p {
+    margin-bottom: 20px;
+  }
+
+  .section .detail-right-flex {
+    flex-direction: column;
+  }
+
+  .section .detail-right-flex div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section .detail-right-flex div h4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0 !important;
+  }
+
+  .section .detail-right-flex a {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .section .detail-right-flex a button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
