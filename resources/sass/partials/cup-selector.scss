@@ -244,6 +244,7 @@
         grid-row-gap: 20px;
         &-cup {
             display: flex;
+            align-items: center;
             background-color: #453736;
             min-height: 0;
             min-width: 0;
@@ -254,6 +255,29 @@
             img {
                 width: auto;
                 height: 100%;
+                &:first-of-type {
+                    background-color: #1D1D1D;
+                }
+                &:nth-of-type(2) {
+
+                    margin-left: auto;
+                    margin-right: 5px;
+                    height: 75%;
+                }
+                &:nth-of-type(2), &:last-of-type {
+
+                }
+                &:last-of-type {
+                    height: 60%;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                }
+            }
+
+            p {
+                color: #999999;
+                margin-bottom: 0;
+                margin-left: 10px;
             }
         }
     }

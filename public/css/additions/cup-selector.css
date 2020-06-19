@@ -252,6 +252,7 @@
 
 .cup-selector-mobile-cart-cups-cup {
   display: flex;
+  align-items: center;
   background-color: #453736;
   min-height: 0;
   min-width: 0;
@@ -264,6 +265,28 @@
 .cup-selector-mobile-cart-cups-cup img {
   width: auto;
   height: 100%;
+}
+
+.cup-selector-mobile-cart-cups-cup img:first-of-type {
+  background-color: #1D1D1D;
+}
+
+.cup-selector-mobile-cart-cups-cup img:nth-of-type(2) {
+  margin-left: auto;
+  margin-right: 5px;
+  height: 75%;
+}
+
+.cup-selector-mobile-cart-cups-cup img:last-of-type {
+  height: 60%;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.cup-selector-mobile-cart-cups-cup p {
+  color: #999999;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .cup-selector-mobile-cart-continue {

@@ -16,6 +16,11 @@ function setPackageSize(elem = null, size = null) {
     for(let i=0; i<cupsizes.length; i++) {
         cupsizes[i].src = location.protocol+'//'+location.host+'/imgs/coffee_box/cups/'+packageSize/6+'.svg';
     }
+
+    let mobileCups = document.getElementsByClassName('cup-selector-mobile-cart-cups-cup-cupsize');
+    for(let i=0; i<mobileCups.length; i++) {
+        mobileCups[i].src = location.protocol+'//'+location.host+'/imgs/coffee_box/cups/'+packageSize/6+'.svg';
+    }
 }
 
 //Disable next step until box is filled
