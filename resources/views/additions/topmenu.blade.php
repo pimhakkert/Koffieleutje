@@ -38,9 +38,11 @@
         </div>
     </div>
     <div class="row btn-row">
-        <button class="btn-standard">
-            Login
-        </button>
+        <a href="{{ route('home_login') }}">
+            <button class="btn-standard">
+                Login
+            </button>
+        </a>
     </div>
     <div class="topmenu-block"></div>
 </nav>
