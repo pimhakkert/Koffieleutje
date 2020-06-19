@@ -49687,6 +49687,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/login/main.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/login/main.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/partials/cup-selector.scss":
 /*!***************************************************!*\
   !*** ./resources/sass/partials/cup-selector.scss ***!
@@ -49699,18 +49710,19 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/header.scss ./resources/sass/Rai_master.scss ./resources/sass/footer.scss ./resources/sass/coffee_box/index.scss ./resources/sass/partials/cup-selector.scss ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/header.scss ./resources/sass/Rai_master.scss ./resources/sass/footer.scss ./resources/sass/coffee_box/index.scss ./resources/sass/login/main.scss ./resources/sass/partials/cup-selector.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\header.scss */"./resources/sass/header.scss");
-__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\Rai_master.scss */"./resources/sass/Rai_master.scss");
-__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\footer.scss */"./resources/sass/footer.scss");
-__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\coffee_box\index.scss */"./resources/sass/coffee_box/index.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\partials\cup-selector.scss */"./resources/sass/partials/cup-selector.scss");
+__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\D1-K1-W2\Koffieleutje\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\D1-K1-W2\Koffieleutje\resources\sass\header.scss */"./resources/sass/header.scss");
+__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\D1-K1-W2\Koffieleutje\resources\sass\Rai_master.scss */"./resources/sass/Rai_master.scss");
+__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\D1-K1-W2\Koffieleutje\resources\sass\footer.scss */"./resources/sass/footer.scss");
+__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\D1-K1-W2\Koffieleutje\resources\sass\coffee_box\index.scss */"./resources/sass/coffee_box/index.scss");
+__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\D1-K1-W2\Koffieleutje\resources\sass\login\main.scss */"./resources/sass/login/main.scss");
+module.exports = __webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\D1-K1-W2\Koffieleutje\resources\sass\partials\cup-selector.scss */"./resources/sass/partials/cup-selector.scss");
 
 
 /***/ })
