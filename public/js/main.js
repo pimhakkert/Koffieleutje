@@ -23,20 +23,39 @@ function toggleMobileMenu() {
 }
 
 //Mobile mode
-let mobileMode = false;
-checkScreenSize();
+let mobileMode = null;
+checkFirstScreenSize();
 
 //When screen resizes, run check again
 window.onresize = checkScreenSize;
+function checkFirstScreenSize() {
+    let width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
 
-function checkScreenSize() {
-
-    //Mobile mode
-    if(screen.width < 1100) {
+    if(width < 1100) {
         mobileMode = true;
-        return;
     }
-    mobileMode = false;
+    else
+    {
+        mobileMode = false;
+    }
+}
+
+//Reload page when necessary
+function checkScreenSize() {
+    let width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    if(width < 1100 && !mobileMode)
+    {
+        window.location.href = window.location.href;
+    }
+    else if(width >= 1100 && mobileMode)
+    {
+        window.location.href = window.location.href;
+    }
 }
 
 

@@ -23,27 +23,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>aos</find>
-      <find>coffee-box-step2-selection-text</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
-        <option value="$PROJECT_DIR$/resources/sass/_style.scss" />
-        <option value="$PROJECT_DIR$/resources/views/coffee_box.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/additions/topmenu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/additions/header.blade.php" />
-      </list>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -157,20 +138,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/additions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/login" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css" />
-      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css\additions" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\views\login" />
       <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\views\additions" />
       <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\views" />
       <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css\bootstrap" />
       <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\app\Http\Controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css" />
+      <recent name="C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\public\css\additions" />
     </key>
   </component>
   <component name="RunManager">
@@ -249,6 +231,7 @@
       <workItem from="1591958096491" duration="3501000" />
       <workItem from="1592153238550" duration="1417000" />
       <workItem from="1592550891149" duration="1222000" />
+      <workItem from="1592554683105" duration="3661000" />
     </task>
     <servers />
   </component>

@@ -9113,6 +9113,12 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  background-image: url(/images/background_gradient.png?1e8b1a2c4d1b2561800391c2638a3a7c);
+  background-size: contain;
+  position: relative;
+}
+
 img {
   width: 100%;
   height: auto;

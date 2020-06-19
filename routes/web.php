@@ -18,6 +18,8 @@ Route::get('/koffie-box/final', 'CoffeeBoxController@final')->name('coffeebox_fi
 
 Route::get('/', 'HomeController@index')->name('home_index');
 
+Route::get('/login', 'HomeController@login')->name('home_login');
+
 Route::redirect('/', '/koffie-box');
 
 

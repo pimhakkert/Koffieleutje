@@ -5,6 +5,12 @@ html,body {
     overflow-x: hidden;
 }
 
+body {
+    background-image: url("imgs/coffee_box/background_gradient.png");
+    background-size: contain;
+    position: relative;
+}
+
 img {
     width: 100%;
     height: auto;
