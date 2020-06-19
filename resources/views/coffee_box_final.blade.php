@@ -13,7 +13,7 @@
                     illum.</p>
             </div>
         </div>
-        <div class="coffee-box-step1 app-background">
+        <div class="button-row btn-row-3 app-background">
             <h2>Step 3.</h2>
             <h3>Choose how often you would like to receive your chosen package.</h3>
             <div class="coffee-box-step1-buttons">
