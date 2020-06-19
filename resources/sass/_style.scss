@@ -154,10 +154,53 @@ a {
     box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.31);
 }
 
+.button-row {
+    display: grid;
+    grid-column-gap: 20px;
+}
+
+.btn-row-2 {
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+}
+
+.btn-row-3 {
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+}
+
+.btn-row-4 {
+    grid-template-columns: repeat(4, minmax(110px, 1fr));
+}
+
+.btn-row-5 {
+    grid-template-columns: repeat(5, minmax(110px, 1fr));
+}
 
 @media only screen and (max-width: 1100px) {
     .mobile-menu {
         display: block;
     }
 
+}
+
+.app-background, .coffee-box .cup-selector-mobile {
+    &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 20vw;
+        top: 0;
+        z-index: -1;
+
+        left: -20vw;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 20vw;
+        top: 0;
+        z-index: -1;
+
+        right: -20vw;
+    }
 }
