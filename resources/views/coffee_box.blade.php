@@ -8,9 +8,8 @@
     <div class="coffee-box">
         <div class="row coffee-box-title">
             <h1 class="col-7" data-aos="fade-right"  data-aos-duration="1000">Customize your box</h1>
-            <div class="col-4 normal-shadow" data-aos="fade-left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, cumque ducimus eaque expedita
-                    illum.</p>
+            <div class="col-4 normal-shadow" data-aos="fade-left" data-aos-duration="1000">
+                <p>Customize your box to your liking. Choose the amount and taste you like and we'll make it happen.</p>
             </div>
         </div>
         <div class="coffee-box-step1 app-background">
@@ -37,13 +36,13 @@
             </div>
         </div>
         <div class="coffee-box-step2 app-background">
-            <div class='aos-wrapper' data-aos="fade-right" data-aos-duration="1000">
+            <div class='aos-wrapper  m-b-sm' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" >
                 <h2>Step 2.</h2>
                 <h3>Pick your favorites from our selection.</h3>
             </div>
 
             <div class="coffee-box-step2-selection" >
-                <div class="cup-item-holder coffee-box-step2-selection-box col-md-8 normal-shadow" data-aos="fade-right" data-aos-duration="1000">
+                <div class="cup-item-holder coffee-box-step2-selection-box col-md-8 normal-shadow" data-aos="fade-right" data-aos-duration="1000" >
                     <div class="cup-item cup-item-empty box-index">
                         <div class="cup-item-top">
                             <img class="cup-item-top-add" data-boxindex="0" src="{{ asset('imgs/coffee_box/add.svg') }}" alt="Add coffee capsule" onclick="openModal(this)">
@@ -87,14 +86,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="aos-wrapper col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top">
-                    <div class="coffee-box-step2-selection-text  normal-shadow">
+                    <div class="coffee-box-step2-selection-text col-md-4  normal-shadow aos-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top">
                         <h2>Next step: Frequency</h2>
                         <p>Now that you have put together a box full of all your favorite tastes of coffee, it's time to
                             select the frequency of deliveries.</p>
                         <a href="{{ route('coffeebox_final') }}" class="btn-standard-2 normal-shadow">Continue</a>
                     </div>
-                </div>
             </div>
             <div class="cup-selector cup-selector-modal">
                 @include('additions.cup-select')

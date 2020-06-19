@@ -1,7 +1,7 @@
 <nav class="topmenu">
     <div class="row">
         <div class="topmenu-logo col-3">
-            <img src="{{ asset('imgs/logo_white.png') }}" alt="Koffieleutje logo">
+            <a href="/koffie-box"><img src="{{ asset('imgs/logo_white.png') }}" alt="Koffieleutje logo"></a>
         </div>
         <div class="topmenu-navigation col-9">
             <a href="{{ route('home_index') }}" class="{{ request()->routeIs('home_index') ? 'active' : '' }}">

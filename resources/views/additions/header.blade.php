@@ -7,6 +7,7 @@
         content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimum-scale=1.0'
     />
     <title>@yield('title')</title>
+    <link rel="icon" type="image/png" href="imgs/logo_white.svg">
     <link rel="stylesheet" href="{{ asset('css/additions/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/additions/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/Rai_master.css') }}">
