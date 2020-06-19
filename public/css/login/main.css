@@ -1,7 +1,85 @@
+.login-section {
+  background-color: #221918;
+}
+
 .loginContainer .top-row {
+  width: 100%;
+  min-width: 100%;
   background-color: #301A17;
   height: 100px;
   display: flex;
   flex-direction: row;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.31);
+  margin-bottom: 40px;
+}
+
+.loginContainer .top-row .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.loginContainer a.btn-register {
+  height: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #9C6F44;
+  margin: auto 0;
+}
+
+.p-b-lg {
+  padding-bottom: 100px;
+}
+
+.m-b-lg {
+  margin-bottom: 100px;
+}
+
+.bottom-row {
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.31);
+  margin-bottom: 100px;
+}
+
+.bottom-row .left {
+  background-color: #453736;
+  min-height: 500px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-row .left img {
+  width: 289px;
+  margin: 0 auto;
+}
+
+.bottom-row .right {
+  background-color: #301A17;
+  min-height: 500px;
+  padding: 40px;
+}
+
+.login-section::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 20vw;
+  top: 0;
+  z-index: -1;
+  left: -20vw;
+}
+
+.login-section::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 20vw;
+  top: 0;
+  z-index: -1;
+  right: -20vw;
 }
 

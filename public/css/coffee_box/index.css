@@ -530,25 +530,3 @@
   color: white !important;
 }
 
-.app-background::before,
-.coffee-box .cup-selector-mobile::before {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 20vw;
-  top: 0;
-  z-index: -1;
-  left: -20vw;
-}
-
-.app-background::after,
-.coffee-box .cup-selector-mobile::after {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 20vw;
-  top: 0;
-  z-index: -1;
-  right: -20vw;
-}
-
