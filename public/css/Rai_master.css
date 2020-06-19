@@ -9195,14 +9195,19 @@ a:hover {
 
 .btn-standard-2 {
   background-color: #221918;
-  font-weight: bold;
+  font-weight: lighter;
   color: white;
   border: none;
   padding: 10px 30px;
   font-family: 'Lato', sans-serif;
   margin: 0 auto;
   display: inline-block;
+  transition: background-color 200ms ease;
   cursor: pointer;
+}
+
+.btn-standard-2:hover {
+  background-color: #181212;
 }
 
 .koffieleutje-logo {

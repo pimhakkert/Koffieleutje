@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/koffie/{id}', 'CoffeeController@detail')->name('coffee_detail');
+
 Route::get('/koffie-box', 'CoffeeBoxController@index')->name('coffeebox_index');
 Route::get('/koffie-box/final', 'CoffeeBoxController@final')->name('coffeebox_final');
 
