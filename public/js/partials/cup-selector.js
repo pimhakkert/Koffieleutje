@@ -328,7 +328,7 @@ document.onkeydown = function (evt) {
 //Main cup add/edit function
 function addOrEditCup(isEdit, index, cup) {
     isEdit = modalEditMode;
-    console.log('Add/Edit');
+
     //Edit the cupArray
     if (!isEdit) {
         if (mobileMode) addToMobileCart(cup);
@@ -344,10 +344,11 @@ function addToMobileCart(cup, loadedByPageload = false) {
     //If cup array is full
     if(!addToFirstUndefinedInArray(cup) && !loadedByPageload)
     {
-        console.log('It full');
         mobileCartFull();
         return;
     }
+
+
 
     editMobileCartButtonContent();
 
@@ -356,7 +357,6 @@ function addToMobileCart(cup, loadedByPageload = false) {
     {
         if(cartItems[i].classList.contains('cup-item-empty'))
         {
-            console.log('has empty');
             let img = document.createElement('img');
             img.src = location.protocol + '//' + location.host + '/imgs/coffee_box/cups/' + cup.image_name;
 
@@ -410,9 +410,8 @@ function addToFirstUndefinedInArray(cup)
         if(cupArray[i] === undefined || cupArray[i] === null)
         {
             cupArray[i] = cup;
-
             //if this is the last cup
-            return i !== 5;
+            return i !== 6;
         }
     }
     return false;

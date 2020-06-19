@@ -49705,12 +49705,12 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\Koffieleutje\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\Koffieleutje\resources\sass\header.scss */"./resources/sass/header.scss");
-__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\Koffieleutje\resources\sass\Rai_master.scss */"./resources/sass/Rai_master.scss");
-__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\Koffieleutje\resources\sass\footer.scss */"./resources/sass/footer.scss");
-__webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\Koffieleutje\resources\sass\coffee_box\index.scss */"./resources/sass/coffee_box/index.scss");
-module.exports = __webpack_require__(/*! C:\Users\Rai Griffioen\Desktop\school\Koffieleutje\Koffieleutje\resources\sass\partials\cup-selector.scss */"./resources/sass/partials/cup-selector.scss");
+__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\header.scss */"./resources/sass/header.scss");
+__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\Rai_master.scss */"./resources/sass/Rai_master.scss");
+__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\footer.scss */"./resources/sass/footer.scss");
+__webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\coffee_box\index.scss */"./resources/sass/coffee_box/index.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\Work\School\K_ID\Koffieleutje\resources\sass\partials\cup-selector.scss */"./resources/sass/partials/cup-selector.scss");
 
 
 /***/ })
