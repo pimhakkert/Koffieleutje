@@ -15,7 +15,7 @@
                 <div class="row">
                    <div class="col-12 top-row">
                        <h2 class="item">Don't have an account?</h2>
-                       <a href="#" class="btn-register item">Register</a>
+                       <a href="#" class="btn-register item normal-shadow">Register</a>
                    </div>
                 </div>
 
@@ -38,7 +38,7 @@
                                 <input name="Password" type="password">
                             </label>
 
-                            <a href="" class="btn">
+                            <a href="" class="btn normal-shadow">
                                 Login
                             </a>
 
