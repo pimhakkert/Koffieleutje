@@ -7,7 +7,7 @@
     <div class="login-section">
 
           <div class="row coffee-box-title">
-              <h1 class="col-7" data-aos="fade-right"  data-aos-duration="1000">Customize your box</h1>
+
             </div>
 
             <div class="loginContainer app-background">
@@ -21,10 +21,29 @@
 
                 <div class="bottom-row row">
                     <div class="left col-7">
-                        <img src="imgs/logo_white.svg" alt="">
+                        <img src="imgs/logo_white.png" alt="">
                     </div>
                     <div class="right col-5">
-                        test
+                        <h3>Please login to continue</h3>
+                        <p style="color: #fff;">Don't have an account? click <a style="color: gray" href="">here</a>.</p>
+                        <form action="">
+
+                            <label for="username">
+                                E-mail
+                                <input name="E-mail" type="email">
+                            </label>
+
+                            <label for="username">
+                                Password
+                                <input name="Password" type="password">
+                            </label>
+
+                            <a href="" class="btn">
+                                Login
+                            </a>
+
+
+                        </form>
                     </div>
                 </div>
 

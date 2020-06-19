@@ -1,5 +1,5 @@
 .login-section{
-  background-color: #221918;
+  //background-color: #221918;
 }
 
 .loginContainer{
@@ -63,6 +63,32 @@
     background-color: #301A17;
     min-height: 500px;
     padding: 40px;
+
+    a.btn{
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 120px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: #9C6F44;
+      color: white;
+      border: none;
+      margin-top: 2em;
+      border-radius: 0;
+    }
+
+    form{
+      label{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        input{
+          margin-top: 10px;
+        }
+      }
+    }
   }
 }
 
