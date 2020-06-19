@@ -30,9 +30,11 @@
                     <h2>Shopping bag <img src="{{ asset('imgs/shopping-bag.svg') }}" alt="Shopping cart"></h2>
                     <span></span>
                 </a>
-                <button class="btn-standard">
-                    Login
-                </button>
+                <a href="{{ route('home_login') }}">
+                    <button class="btn-standard">
+                        Login
+                    </button>
+                </a>
             </div>
         </div>
         @yield('content')

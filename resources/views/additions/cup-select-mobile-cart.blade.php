@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="cup-selector-mobile-cart-continue">
-        <h4>Continue</h4>
-    </div>
+    <a class="cup-selector-mobile-cart-continue" href="{{ route('coffeebox_final') }}">
+        <h4>Next step</h4>
+    </a>
 </div>

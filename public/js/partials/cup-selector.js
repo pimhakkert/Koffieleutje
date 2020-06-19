@@ -78,6 +78,7 @@ function loadCapsules() {
 
 //Place the loaded cups into the cup selector
 function placeCupInSelector(cup, cupSelector, invisible = false) {
+
     let cupSelectorItem = document.createElement('div');
     cupSelectorItem.className = 'cup-item modal-item';
 
@@ -202,7 +203,6 @@ function paginateSelector(pageNumber, numOfCapsules) {
 
     //Create the capsules as HTML and add them into the modal
     for (let i = min; i < max; i++) {
-        if(mobileMode) placeCupInSelector(cupSelectorItems[i], cupSelector);
         placeCupInSelector(cupSelectorItems[i], cupSelector);
     }
 
@@ -383,6 +383,8 @@ function addToMobileCart(cup, loadedByPageload = false) {
             break;
         }
     }
+
+    if(getSizeOfCupArray() === 6) mobileCartFull();
 }
 
 function removeFromMobileCart(index)
@@ -392,6 +394,10 @@ function removeFromMobileCart(index)
     cartItems[index].innerHTML = '';
     cartItems[index].classList.add('cup-item-empty');
     editMobileCartButtonContent();
+
+    let a = document.getElementsByClassName('cup-selector-mobile-cart-continue')[0];
+    a.classList.remove('next-step-available');
+
 }
 
 function editMobileCart(index, cup) {
@@ -401,6 +407,9 @@ function editMobileCart(index, cup) {
 function mobileCartFull() {
     let a = document.getElementsByClassName('cup-selector-mobile-cart-button-continue')[0];
     a.classList.add('on-continue');
+
+    let b = document.getElementsByClassName('cup-selector-mobile-cart-continue')[0];
+    b.classList.add('next-step-available');
 }
 
 function addToFirstUndefinedInArray(cup)

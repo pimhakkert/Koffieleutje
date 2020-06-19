@@ -290,8 +290,29 @@
 }
 
 .cup-selector-mobile-cart-continue {
+  cursor: pointer;
   margin-top: 25px;
   background-color: #453736;
+  position: relative;
+}
+
+.cup-selector-mobile-cart-continue::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.cup-selector-mobile-cart-continue.next-step-available::after {
+  display: none;
 }
 
 .cup-selector-mobile-cart-continue h4 {

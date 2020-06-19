@@ -282,8 +282,26 @@
         }
     }
     &-continue {
+        cursor: pointer;
         margin-top: 25px;
         background-color: #453736;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.9);
+            user-select: none;
+            pointer-events: none;
+        }
+        &.next-step-available {
+            &::after {
+                display: none;
+            }
+        }
         h4 {
             text-align: center;
             margin: 25px 0;
