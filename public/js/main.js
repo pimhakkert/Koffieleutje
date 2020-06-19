@@ -56,14 +56,14 @@ function loadCupArray() {
         editMobileCartButtonContent();
         for(let i=0;i<cupArray.length;i++) {
             if(cupArray[i] !== null && cupArray[i] !== undefined) {
-                fillMobileCart(i, cupArray);
+                addToMobileCart(cupArray[i], true);
             }
         }
     }
     else {
         for(let i=0;i<cupArray.length;i++) {
             if(cupArray[i] !== null && cupArray[i] !== undefined) {
-                fillBox(i, cupArray[i]);
+                addToBox(i, cupArray[i]);
             }
         }
     }
@@ -88,9 +88,17 @@ function makeProxy() {
                 cupArrayEdit(property, value);
             }
 
+            //If we're deleting a cup
+            if(currentValue !== undefined && (value === null || value === undefined))
+            {
+                saveCupArray();
+            }
+
             tryNextStep();
             return true;
         }
+
+
     });
 }
 
@@ -106,14 +114,10 @@ function isArrayFull( arr ) {
 }
 
 function cupArrayAdd(index, value) {
-    console.log('adding!');
-
     saveCupArray();
 }
 
 function cupArrayEdit(index, value) {
-    console.log('editing!');
-
     saveCupArray();
 }
 

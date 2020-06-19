@@ -328,7 +328,7 @@ document.onkeydown = function (evt) {
 //Main cup add/edit function
 function addOrEditCup(isEdit, index, cup) {
     isEdit = modalEditMode;
-
+    console.log('Add/Edit');
     //Edit the cupArray
     if (!isEdit) {
         if (mobileMode) addToMobileCart(cup);
@@ -340,10 +340,11 @@ function addOrEditCup(isEdit, index, cup) {
 }
 
 //Change mobile cart
-function addToMobileCart( cup) {
+function addToMobileCart(cup, loadedByPageload = false) {
     //If cup array is full
-    if(!addToFirstUndefinedInArray(cup))
+    if(!addToFirstUndefinedInArray(cup) && !loadedByPageload)
     {
+        console.log('It full');
         mobileCartFull();
         return;
     }
@@ -355,6 +356,7 @@ function addToMobileCart( cup) {
     {
         if(cartItems[i].classList.contains('cup-item-empty'))
         {
+            console.log('has empty');
             let img = document.createElement('img');
             img.src = location.protocol + '//' + location.host + '/imgs/coffee_box/cups/' + cup.image_name;
 
@@ -363,29 +365,40 @@ function addToMobileCart( cup) {
 
             let cupSize = document.createElement('img');
             cupSize.src = location.protocol + '//' + location.host + '/imgs/coffee_box/cups/' + packageSize / 6 + '.svg';
+            cupSize.classList.add('cup-selector-mobile-cart-cups-cup-cupsize');
+
+            let remove = document.createElement('img');
+            remove.src = location.protocol + '//' + location.host + '/imgs/cup-selector/button_remove.svg';
+            remove.classList.add('normal-shadow');
+
+            remove.addEventListener('click', () => {
+               removeFromMobileCart(i);
+            });
 
             cartItems[i].appendChild(img);
             cartItems[i].appendChild(text);
             cartItems[i].appendChild(cupSize);
+            cartItems[i].appendChild(remove);
             cartItems[i].classList.remove('cup-item-empty');
             break;
         }
     }
+}
 
-
-
+function removeFromMobileCart(index)
+{
+    cupArray[index] = undefined;
+    let cartItems = document.getElementsByClassName('cup-selector-mobile-cart-cups-cup');
+    cartItems[index].innerHTML = '';
+    cartItems[index].classList.add('cup-item-empty');
+    editMobileCartButtonContent();
 }
 
 function editMobileCart(index, cup) {
     cupArray[index] = cup;
 }
 
-function fillMobileCart(index, cup) {
-
-}
-
 function mobileCartFull() {
-    console.log('Mobile cart is full!');
     let a = document.getElementsByClassName('cup-selector-mobile-cart-button-continue')[0];
     a.classList.add('on-continue');
 }
@@ -408,6 +421,11 @@ function addToFirstUndefinedInArray(cup)
 function editMobileCartButtonContent()
 {
     document.getElementsByClassName('cup-selector-mobile-cart-button-content')[0].innerHTML = getSizeOfCupArray()+'/6';
+    let a = document.getElementsByClassName('cup-selector-mobile-cart-button-continue')[0];
+    if(getSizeOfCupArray() < 6 && a.classList.contains('on-continue'))
+    {
+        a.classList.remove('on-continue');
+    }
 }
 
 
@@ -508,12 +526,6 @@ function editBox(index, cup) {
 
     //Close modal
     if (cupSelectorModalOpen) closeModal();
-}
-
-
-
-function fillBox(index, cup) {
-    addToBox(index, cup);
 }
 
 //Opens the mobile cart
